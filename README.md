@@ -28,11 +28,6 @@ supports:
   ([x]   (do (.log js/console (pr-str x)) x))
   ([m x] (do (log-str {:msg m :data x})   x)))
 
-
-(defn log 
-  ([x]   (do (.log js/console x) x))
-  ([m x] (do (log {:msg m :data x})   x)))
-
 (log-str "hello" (md5    "hello"))
 (log-str "hello" (sha1   "hello"))
 (log-str "hello" (sha256 "hello"))

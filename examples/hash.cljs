@@ -14,10 +14,9 @@
 (log-str "hello" (md5    "hello"))
 (log-str "hello" (sha1   "hello"))
 (log-str "hello" (sha256 "hello"))
-(log-str "政"    (md5 (js* "'政'")))
-(log-str "政"    (gh/sha1-hex   "政"))
+(log-str "政 md5"    (md5    "政"))
+(log-str "政 sha1"   (sha1   "政"))
+(log-str "政 sha256" (sha256 "政"))
 (log-str "goog - 政 md5hex"  (gh/md5-hex  "政"))
 (log-str "goog - 政 sha1hex" (gh/sha1-hex  "政"))
 (log-str "goog - 政 :md5"    (gh/hash :md5  "政"))
-
-
